@@ -28,7 +28,7 @@
 		</form>
 
 		<hr />
-		<span th:text="Hello"></span> <span th:text="${msg}"></span>
+		<span th:text="Hello"></span>
 
 		<div class="btn-group" role="group" aria-label="...">
 			<button type="button" class="btn btn-default" onclick="exportall()">下载数据</button>
@@ -39,8 +39,7 @@
 		<form action="importall" method="post" enctype="multipart/form-data"
 			class="form-horizontal" >
 			<div class="form-group">
-				<label for="exampleInputFile">上传文件：</label> <input type="file"
-					name="filename">
+				上传文件：</label> <input type="file" name="filename">
 			</div>
 			<input class="btn btn-default" type="submit" value="提交">
 		</form>

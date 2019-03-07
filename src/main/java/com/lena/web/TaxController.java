@@ -33,20 +33,20 @@ public class TaxController {
     @Autowired
     private ITaxService iTaxService;
 
-    @RequestMapping("/taxdata")
+    /*@RequestMapping("/taxdata")
     public String getsalarybasedatapage() {
         return "salarybasedata";
-    }
+    }*/
 
-    @RequestMapping("/emport")
-    public String importAndEmport() {
-        return "export";
+    @RequestMapping("/export")
+    public String importAndExport() {
+        return "tax/export";
     }
 
     @RequestMapping("/exportall")
     public String exportall() {
         System.out.println("下载成功");
-        return "sussecc";
+        return "tax/sussecc";
     }
 
     @RequestMapping("/importall")
@@ -163,7 +163,7 @@ public class TaxController {
             }
 
         // 返回成功頁面
-        return "sussecc";
+        return "tax/sussecc";
     }
 
     /*
